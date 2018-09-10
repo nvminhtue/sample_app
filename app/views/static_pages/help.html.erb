@@ -1,0 +1,11 @@
+<% provide(:title, t(".head")) %>
+    <h1><%= t ".head" %></h1>
+    <p>
+      <%= t ".get" %>
+      <%= link_to t(".rail"), t(".link") %>
+      <%= t(".to") %>
+      <%= link_to t("static_pages.about.book_link") do %>
+        <em><%= t("static_pages.about.tutorial") %></em> <%end%>
+      <%= t("static_pages.about.book") %>
+    </p>
+
