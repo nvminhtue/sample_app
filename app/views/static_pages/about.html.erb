@@ -1,0 +1,19 @@
+<% provide(:title, (t ".head")) %>
+
+<h1><%= t ".head" %></h1>
+<p>
+ <!-- Advance, save for later reading -->
+ <!--  <%= t("static_pages.About.p_content",
+ rails_link: link_to(content_tag(:em,t("static_pages.About.title_rail_link")), "http://www.railstutorial.org")).html_safe %> -->
+  <!-- Start -->
+  <%= t ".the" %>
+  <%= link_to t(".link") do %>
+  <em><%= t(".tutorial") %></em> <%end%>
+  <%= t(".isa") %>
+  <%= link_to t(".book"), t(".book_link") %>
+  <%= t(".and") %>
+  <%= link_to t(".seriess"), t(".screencast_link") %>
+  <%= t(".to") %>
+  <%= link_to t(".ruby"), t(".ROR_link") %>
+  <%= t(".sample") %>
+</p>
