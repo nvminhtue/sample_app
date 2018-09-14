@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t("static_pages.about.the") %>
+    <%= link_to t("static_pages.about.tutorial"), t("static_pages.home.link") %>
+    <%= t(".by") %>
+    <%= link_to t(".micheal"), t(".link") %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("static_pages.about.head"), about_path %></li>
+      <li><%= link_to t("static_pages.contact.head"), contact_path %></li>
+      <li><%= link_to t(".news"), t("static_pages.home.link") %></li>
+    </ul>
+  </nav>
+</footer>

@@ -1,7 +1,22 @@
 
 en:
-
   hello: "Hello world"
+  news: "News"
+  layouts:
+    header:
+      sample: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      by: "by"
+      micheal: "Michael Hartl"
+      link: "http://www.michaelhartl.com/"
+      news: "News"
+  users:
+    new:
+      sign: "Sign up"
+      this: "This will be a signup page for new users."
   static_pages:
     contact:
       head: "Contact"
@@ -31,10 +46,13 @@ en:
       this: "This is the home page for the"
       sample: "sample application."
       link: "http://www.railstutorial.org/"
+      png: "rails.png"
+      alt: "Rails logo"
     help:
       head: "Help"
       get: "Get help on the Ruby on Rails Tutorial at the"
       rail: "Rails Tutorial help page"
       to: "To get help on this sample app, see the"
       link: "http://www.railstutorial.org/help"
+
 
