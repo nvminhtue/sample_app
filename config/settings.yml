@@ -1,0 +1,7 @@
+user:
+  name:
+    _max: 50
+  email:
+    _max: 255
+  pass:
+    _min: 6
