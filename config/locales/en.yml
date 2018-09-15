@@ -1,7 +1,16 @@
 
 en:
   hello: "Hello world"
-  news: "News"
+  controllers:
+    users_controller:
+      welcome: "Welcome to the Sample App!"
+      new: "new"
+  shared:
+    error_messages:
+      form: "The form contains"
+      error:
+        one: "%{count} error"
+        other: "%{count} errors"
   layouts:
     header:
       sample: "sample app"
@@ -17,6 +26,8 @@ en:
     new:
       sign: "Sign up"
       this: "This will be a signup page for new users."
+      confirm: "Confirmation"
+      create: "Create my account"
   static_pages:
     contact:
       head: "Contact"
