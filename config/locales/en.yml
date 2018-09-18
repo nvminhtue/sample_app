@@ -4,8 +4,11 @@ en:
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
-      info: "User is not found. Make your own"
+      info: "User is not found!"
       new: "new"
+      please: "Please log in."
+      delete: "User deleted"
+      wrong: "No editing permittion"
     sessions_controller:
       invalid: "Invalid email or password"
   sessions:
@@ -29,6 +32,8 @@ en:
       account_dropdown: "Account %{bold}"
       login: "Log in"
       logout: "Log out"
+      profile: "Profile"
+      setting: "Setting"
     footer:
       by: "by"
       micheal: "Michael Hartl"
@@ -40,6 +45,12 @@ en:
       this: "This will be a signup page for new users."
       confirm: "Confirmation"
       create: "Create my account"
+    edit:
+      save: "Save changes"
+      change: "Change"
+      link: "http://gravatar.com/emails"
+    index:
+      all: "All users"
   static_pages:
     contact:
       head: "Contact"
