@@ -6,6 +6,6 @@ user:
   pass:
     _min: 6
   size: 50
+  expire: 2
 check:
   remember: "1"
-

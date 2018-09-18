@@ -18,12 +18,14 @@ gem "rails", "~> 5.2.1"
 gem "rails-controller-testing"
 gem "faker", ">= 1.7.3"
 gem "will_paginate", "3.1.6"
+gem "figaro"
 gem "bootstrap-will_paginate", "1.0.0"
 gem "rubocop", "~> 0.54.0", require: false
 gem "sass-rails", "~> 5.0"
 gem "sqlite3"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
+gem "delayed_job_active_record"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
