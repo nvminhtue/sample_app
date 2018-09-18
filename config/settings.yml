@@ -9,3 +9,5 @@ user:
   expire: 2
 check:
   remember: "1"
+picture:
+  _max: 5

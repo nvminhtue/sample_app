@@ -2,6 +2,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\dasdasd\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save ->{email.downcase!}
+  has_many :microposts, dependent: :destroy
   before_create :create_activation_digest
   validates :name, presence: true, length: {maximum: Settings.user.name._max}
   validates :email, presence: true, length: {maximum: Settings.user.email._max},
@@ -9,6 +10,7 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, length: {minimum: Settings.user.pass._min},
     allow_nil: true
+  scope :activated,-> {where(activated: true)}
 
   def User.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
@@ -57,11 +59,11 @@ class User < ApplicationRecord
     reset_sent_at < Settings.user.expire.hours.ago
   end
 
-private
-
-  def downcase_email
-    self.email = email.downcase
+  def feed
+    Micropost.nofti id
   end
+
+private
 
   def create_activation_digest
     self.activation_token  = User.new_token

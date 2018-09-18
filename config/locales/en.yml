@@ -1,6 +1,9 @@
 
 en:
   hello: "Hello world"
+  models:
+    micropost:
+      less: "should be less than 5MB"
   mailers:
     user_mailer:
       act_subject: "Account activation"
@@ -8,6 +11,12 @@ en:
   controllers:
     password_resets_controller:
       empty: "can not be empty"
+    microposts_controller:
+      success: "Micropost created!"
+      delete: "Micropost deleted"
+    application_controller:
+      please: "Please log in."
+    password_resets_controller:
       info: "Email sent with password reset instructions"
       danger: "Email address not found"
       success: "Password has been reset."
@@ -22,7 +31,6 @@ en:
       info: "User is not found!"
       profile: "Profile is successfully updated!"
       new: "new"
-      please: "Please log in."
       delete: "User deleted"
       wrong: "No editing permittion"
     sessions_controller:
@@ -36,6 +44,14 @@ en:
       sign: "Sign up now!"
       remember: "Remember me on this computer"
   shared:
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view: "View my profile"
+      micropost:
+        one: "%{count} micropost"
+        other: "%{count} microposts"
     error_messages:
       form: "The form contains"
       error:
@@ -72,6 +88,12 @@ en:
     user:
       delete: "delete"
       confirm: "You sure?"
+    show:
+      microposts: "Microposts"
+  microposts:
+    micropost:
+      post: "Posted "
+      ago: "ago."
   static_pages:
     contact:
       head: "Contact"
@@ -98,6 +120,7 @@ en:
       ruby: "Ruby on Rails Tutorial Sample App"
     home:
       home: "Sample App"
+      micropost: "Micropost Feed"
       signup: "Sign up now!"
       this: "This is the home page for the"
       sample: "sample application."
