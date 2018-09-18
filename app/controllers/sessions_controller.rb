@@ -1,17 +1,15 @@
 class SessionsController < ApplicationController
 
   def new
-    if logged_in?
-      redirect_to current_user
-    end
+    redirect_to current_user if logged_in?
   end
 
   def create
     @user = User.find_by(email: params[:session][:email].downcase)
-    if @user &. authenticate(params[:session][:password])
+    if @user&.authenticate(params[:session][:password])
       log_in @user
-      params[:session][:remember_me] == Settings.session.yes ? remember(@user) : forget(@user)
-      redirect_to @user
+      params[:session][:remember_me] == Settings.check.remember ? remember(@user) : forget(@user)
+      redirect_back_or @user
     else
       flash.now[:danger] = t("controllers.sessions_controller.invalid")
       render :new
