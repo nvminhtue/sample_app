@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     if @user == nil
       redirect_to signup_path
-      flash[:info] = "User is not found. Make your own"
+      flash[:info] = t("controllers.users_controller.info")
     end
   end
 
@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      log_in @user
       flash[:success] = t("controllers.users_controller.welcome")
       redirect_to @user
     else

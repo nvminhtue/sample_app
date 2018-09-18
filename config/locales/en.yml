@@ -4,7 +4,15 @@ en:
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
+      info: "User is not found. Make your own"
       new: "new"
+    sessions_controller:
+      invalid: "Invalid email or password"
+  sessions:
+    new:
+      login: "Log in"
+      new: "New user?"
+      sign: "Sign up now!"
   shared:
     error_messages:
       form: "The form contains"
@@ -16,7 +24,10 @@ en:
       sample: "sample app"
       home: "Home"
       help: "Help"
+      user: "Users"
+      account_dropdown: "Account %{bold}"
       login: "Log in"
+      logout: "Log out"
     footer:
       by: "by"
       micheal: "Michael Hartl"

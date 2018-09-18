@@ -9,6 +9,7 @@ gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails", "~> 4.3", ">= 4.3.1"
 gem "minitest", group: :test
 gem "minitest-reporters", group: :test
 gem "pg"
