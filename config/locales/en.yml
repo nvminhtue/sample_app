@@ -13,6 +13,7 @@ en:
       login: "Log in"
       new: "New user?"
       sign: "Sign up now!"
+      remember: "Remember me on this computer"
   shared:
     error_messages:
       form: "The form contains"
@@ -65,6 +66,7 @@ en:
       ruby: "Ruby on Rails Tutorial Sample App"
     home:
       home: "Sample App"
+      signup: "Sign up now!"
       this: "This is the home page for the"
       sample: "sample application."
       link: "http://www.railstutorial.org/"

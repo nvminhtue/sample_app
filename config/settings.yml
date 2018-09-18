@@ -5,3 +5,5 @@ user:
     _max: 255
   pass:
     _min: 6
+session:
+  yes: "1"
