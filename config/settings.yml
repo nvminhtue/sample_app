@@ -5,5 +5,7 @@ user:
     _max: 255
   pass:
     _min: 6
-session:
-  yes: "1"
+  size: 50
+check:
+  remember: "1"
+

@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(email: params[:session][:email].downcase)
     if @user&.authenticate(params[:session][:password])
       log_in @user
-      params[:session][:remember_me] == Settings.session.yes ? remember(@user) : forget(@user)
+      params[:session][:remember_me] == Settings.check.remember ? remember(@user) : forget(@user)
       redirect_back_or @user
     else
       flash.now[:danger] = t("controllers.sessions_controller.invalid")

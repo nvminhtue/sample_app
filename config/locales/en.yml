@@ -3,6 +3,7 @@ en:
   hello: "Hello world"
   controllers:
     users_controller:
+      danger: "Delete error"
       welcome: "Welcome to the Sample App!"
       info: "User is not found!"
       new: "new"
@@ -51,6 +52,9 @@ en:
       link: "http://gravatar.com/emails"
     index:
       all: "All users"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
   static_pages:
     contact:
       head: "Contact"
